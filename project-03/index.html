@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>Document</title>
+    </head>
+    <body class="body">
+        <header class="header"></header>
+
+        <main class="main">
+            <nav class="nav"></nav>
+            <div>
+                <section class="block-one">
+                    <div class="container">
+                        <div class="container__box"></div>
+                        <div class="container__box"></div>
+                        <div class="container__box"></div>
+                        <div class="container__box"></div>
+                        <div class="container__box"></div>
+                        <div class="container__box"></div>
+                        <div class="container__box"></div>
+                        <div class="container__box"></div>
+                        <div class="block-big"></div>
+                    </div>
+                </section>
+                <div class="menu">
+                    <div class="menu__box-comment" >
+                        <p class="menu__box-comment-text">Комментарии</p>
+                        <p class="menu__box-comment-count"></p>
+                    </div>
+                    <div class="menu__box">
+                        <p class="menu__sorting"></p>
+                        <img class="menu__arrow-sorting" src="./image/arrow up.svg" alt="arrow up" />
+                    </div>
+                    <div class="rating-block"></div>
+                    <p class="menu__favorites">
+                        Избранное
+                        <img class="menu__favorites-img" src="./image/сердце избранное.svg" alt="сердце избранное" />
+                    </p>
+                </div>
+
+
+                <div class="new-comments">
+                    <img class="new-comments__image" src="./image/Максим Алексеев.jpg" alt="" />
+                    <h2 class="new-comments__name">Максим Авдеенко</h2>
+                    <!-- <div class="new-comments__answer" >
+                        <img class="new-comments__answer-image" src="./image/стрелка ответа.svg" alt="стрелка ответа">
+                        <h2 class="new-comments__answer-name">Алексей</h2>
+                    </div> -->
+                    <p class="new-comments__amount">Макс. 1000 символов</p>
+                    <div class="new-comments__amount-box" >
+                        <p class="new-comments__amount-error">Слишком длинное сообщение</p>
+                    </div>
+                    <form action="" class="new-comments__form" onsubmit="return false">
+                        <textarea class="new-comments__form-input" placeholder="Введите текст..."></textarea>
+                        <button class="new-comments__form-button">Отправить</button>
+                    </form>
+                </div>
+                <section class="block-two"></section>
+            </div>
+        </main>
+        <script src="./src/users.js"></script>
+        <script src="./src/sortMenu.js"></script>
+        <script src="./src/favorites.js"></script>
+        <script src="./src/likes.js"></script>
+        <script src="./src/localMemory.js"></script>
+        <script src="./src/CommentCreate.js"></script>
+        <script src="./src/main.js"></script>
+        <script src="./src/index.js"></script>
+    </body>
+</html>
